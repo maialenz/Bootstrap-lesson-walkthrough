@@ -15,7 +15,18 @@
 <body>
 
     <!--nav-->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+    <div class="container-fluid navalert-container">
+        <div class="container-fluid alert-container">
+        <div class="row d-none d-sm-block">
+            <div class="col-12">
+                <div class="site-wide-alert alert alert-warning">
+                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6!
+                    <a href="">See here for details!</a>
+                </div>   
+            </div>
+        </div>
+        </div>
+        <nav class="navbar navbar-dark navbar-expand-sm">
         <a href="/" class="navbar-brand">Whiskey Drop</a>
 
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,22 +53,13 @@
         </div>
         <div class="d-none d-md-block">
             <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
-            <a href="/login">Sing in / Sing up</a>
+            <a href="/login" class="btn btn--cta btn--red">Sing in / Sing up</a>
         </div>
     </nav>
+    </div>
     <!--nav-->
 
-   <!-- <div class="container alert-container">
-        <div class="row d-none d-sm-block">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6!
-                    <a href="">See here for details!</a>
-                </div>   
-            </div>
-
-        </div> -->
-        <div class="container-fluid callout-container">
+    <div class="container-fluid callout-container">
         <!--Callout-->
             <div class="opaque-overlay">&nbsp;</div>
             <div class="row">
@@ -76,14 +78,15 @@
             </div>
         </div>
         <!--/.callout-->
-    </div>
 
         <!--Quotes-->
-        <div class="container quotes-container">
+        <div class="container-wrapper">
+        <div class="container quotes-container content-container">
         <section class="quotes">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <h2 class="text-uppercase">Quotes:</h2>
+                    <hr class="block-devider block-devider--short">
                 </div>
             </div>
             <div class="row">
@@ -117,21 +120,24 @@
                 </div>
             </div>
         </section>
+        </div>
         <!--/.quotes-->
     </div>
 
          <!--features-->
-        <div class="features-container">
+         <div class="container-wrapper container-wrapper--red">
+        <div class="container features-container content-container">
         <section class="features">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <h2 class="text-uppercase">Features:</h2>
+                    <hr class="block-devider block-devider--short block-devider--white">
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3><i class="fas fa-gifts d-none d-sm-inline"></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
+                        <h3><i class="fas fa-gifts d-none d-sm-block"></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
@@ -143,7 +149,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
+                        <h3><i class="fas fa-credit-card d-none d-sm-block"></i> Feature 2</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
@@ -155,7 +161,7 @@
                 </div>
                 <div class="col-12 d-md-none d-lg-block col-lg-4">
                     <div class="feature">
-                        <h3><i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
+                        <h3><i class="fas fa-times-circle d-none d-sm-block"></i> Feature 3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
@@ -167,6 +173,7 @@
                 </div>
         </div>
       </section>
+    </div>
       <!--/.features-->
     </div>
 
